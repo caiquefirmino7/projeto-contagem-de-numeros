@@ -1,38 +1,41 @@
 body{
-    font: normal 1.5em arial;
-    background: rgb(5, 193, 240);
+    background: rgb(49, 211, 203);
+    color: white;
+    font: normal 15pt arial;
+}
+
+h1{
+    text-align: center;
 }
 
 header{
+    color: white;
     text-align: center;
-    color: aliceblue;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 3px 3px 3px black;
 }
-
-p{
-    font-size: 1.2em;
-}
-
-input{
-    font-size: 0.7em;
-    
-}
-
 
 section{
-    background: rgb(235, 238, 235);
+    background: rgb(248, 248, 248);
+    border-radius: 15px;
     width: 500px;
-   
-    padding: 55px;
+    padding: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px rgb(230, 220, 220);
     margin: auto;
-    border-radius: 40px;
+    font-weight: 600;
     box-shadow: 5px 5px 15px black;
+}
+ 
+#button{
+    cursor: pointer;
 }
 
 footer{
     text-align: center;
     padding-top: 15px;
     color: aliceblue;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 2px 2px 2px black;
     font-weight: 600;
+    font-style: italic;
 }
