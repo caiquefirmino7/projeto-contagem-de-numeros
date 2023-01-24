@@ -1,0 +1,38 @@
+body{
+    font: normal 1.5em arial;
+    background: rgb(5, 193, 240);
+}
+
+header{
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 4px 4px 4px black;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+input{
+    font-size: 0.7em;
+    
+}
+
+
+section{
+    background: rgb(235, 238, 235);
+    width: 500px;
+   
+    padding: 55px;
+    margin: auto;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px black;
+}
+
+footer{
+    text-align: center;
+    padding-top: 15px;
+    color: aliceblue;
+    text-shadow: 4px 4px 4px black;
+    font-weight: 600;
+}
