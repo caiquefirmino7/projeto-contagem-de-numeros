@@ -1,5 +1,4 @@
-
-function contar(){
+    function contar(){
     let inputInicio = document.querySelector('input#inputInicio');
     let inputFim = document.querySelector('input#inputFim');
     let inputPasso = document.querySelector('input#inputPasso');
@@ -25,11 +24,3 @@ function contar(){
       }
     }
   };
-
-   
-
-    
-    
-    
-
-}
