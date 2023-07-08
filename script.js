@@ -1,33 +1,30 @@
+
 function contar(){
-    var inicio = window.document.getElementById('txtinicio')
-    var passo = window.document.getElementById('txtpasso')
-    var fim = window.document.getElementById('txtfim')
-    var res = window.document.getElementById('res')
+    let inputInicio = document.querySelector('input#inputInicio');
+    let inputFim = document.querySelector('input#inputFim');
+    let inputPasso = document.querySelector('input#inputPasso');
+    let resposta = document.querySelector('div#resposta');
+    resposta.innerText = '';
 
-    if (inicio.value.length == 0 || passo.value.length == 0 || fim.value.length == 0 ){
-        window.alert('[ERRO, preencha todos os campos!')
-    } else{
+    if(inputInicio.value.length == 0|| inputFim.value.length == 0 || inputPasso.value.length == 0 || inputPasso.value == 0){
+        alert('[Preencha todos os campos!]')
+        resposta.innerText = 'Impossivel contar!'
+    } else {
+      let inicio = parseInt(inputInicio.value);
+      let fim = parseInt(inputFim.value);
+      let passo = parseInt(inputPasso.value);
 
-        var inicio = Number(inicio.value)
-        var passo = Number(passo.value)
-        var fim = Number(fim.value) 
-    
-            if (inicio < fim){
-                while  (inicio <= fim){
-                    res.innerHTML+= (`${inicio} `)
-                    inicio+= passo
-                }
-
-            } else {
-                while  (inicio >= fim){
-                    res.innerHTML+= (`${inicio} `)
-                    inicio-= passo
-                }
+        if(inicio < fim){
+            for( let i = inicio; i <= fim; i+=passo){
+                resposta.innerHTML += ` ${i} `;
             }
-       
-          
-
+      } else {
+        for( let i = inicio; i >= fim; i-=passo){
+            resposta.innerHTML += ` ${i} `;
+        }
+      }
     }
+  };
 
    
 
